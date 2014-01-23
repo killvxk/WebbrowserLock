@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{19B3DE18-696A-42D0-B6E3-48C53BFBD527}</ProjectGuid>
+    <RootNamespace>SystemServerCommunication</RootNamespace>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\Services\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>$(SolutionDir)$(MSBuildProjectDefaultTargets)\Services\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\Services\</OutDir>
+    <IntDir>$(SolutionDir)$(MSBuildProjectDefaultTargets)\Services\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PreprocessorDefinitions>__WIN32__;NEW_LP;WIN32;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ProgramDataBaseFileName>$(SolutionDir)PDB\$(RootNamespace)\$(Configuration)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <AdditionalIncludeDirectories>..\..\;..\..\Plugins\;..\..\interface\Plugin;..\..\LP;..\..\Function;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>ServicesTool.def</ModuleDefinitionFile>
+      <ProgramDatabaseFile>$(SolutionDir)PDB\Services\$(Configuration)\$(TargetName).pdb</ProgramDatabaseFile>
+      <ImportLibrary>$(SolutionDir)LIB\Services\$(TargetName).lib</ImportLibrary>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <PostBuildEvent>
+      <Command>del /f /q "$(OutDir)\$(TargetName).ilk"
+del /f /q "$(OutDir)\$(TargetName).exp"</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>"$(SolutionDir)\Build.exe"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>NEW_LP;WIN32;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ProgramDataBaseFileName>$(SolutionDir)PDB\$(RootNamespace)\$(Configuration)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <AdditionalIncludeDirectories>..\..\;..\..\Plugins\;..\..\interface\Plugin;..\..\LP;..\..\Function;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(SolutionDir)PDB\Services\$(Configuration)\$(TargetName).pdb</ProgramDatabaseFile>
+      <ImportLibrary>$(SolutionDir)LIB\Services\$(TargetName).lib</ImportLibrary>
+      <ModuleDefinitionFile>ServicesTool.def</ModuleDefinitionFile>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+    </Link>
+    <PreBuildEvent>
+      <Command>$(SolutionDir)\Build.exe</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>$(SolutionDir)\Execute\VMProtect\VMProtect.exe "$(TargetPath)"
+move /Y "$(OutDir)\$(TargetName)$(TargetExt)" "$(OutDir)\old.$(TargetName)$(TargetExt)"
+move /Y "$(OutDir)\$(TargetName).vmp$(TargetExt)" "$(OutDir)\$(TargetName)$(TargetExt)"
+del /f /q "$(OutDir)\$(TargetName).ilk"
+del /f /q "$(OutDir)\$(TargetName).exp"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Common\Database\SmartDB.cpp" />
+    <ClCompile Include="..\..\Common\Socket\Services\CommandServicesObj.cpp" />
+    <ClCompile Include="..\..\Common\Socket\Services\HttpServicesObj.cpp" />
+    <ClCompile Include="..\..\Common\Socket\Services\MiniWebsvr\mongoose.c" />
+    <ClCompile Include="..\..\Common\Socket\Services\ResourceServicesObj.cpp" />
+    <ClCompile Include="CommunicationTool.cpp" />
+    <ClCompile Include="ServicesToolMain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Common\Database\SmartDB.h" />
+    <ClInclude Include="..\..\Common\Database\sqlite3.h" />
+    <ClInclude Include="..\..\Common\Socket\Services\CommandServicesObj.h" />
+    <ClInclude Include="..\..\Common\Socket\Services\HttpServicesObj.h" />
+    <ClInclude Include="..\..\Common\Socket\Services\MiniWebsvr\mongoose.h" />
+    <ClInclude Include="..\..\Common\Socket\Services\ResourceServicesObj.h" />
+    <ClInclude Include="CommunicationTool.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="ServicesToolMain.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource.Information.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ServicesTool.def" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

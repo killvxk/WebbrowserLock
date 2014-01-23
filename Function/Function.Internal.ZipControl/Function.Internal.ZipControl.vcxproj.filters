@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\Fex">
+      <UniqueIdentifier>{a3d542da-ca11-4b6d-8fe6-10e1cd1d54c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\7Zip">
+      <UniqueIdentifier>{8065c592-e7b8-46fa-9a32-a42bc6aaa4eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Fex">
+      <UniqueIdentifier>{f5b838a4-83cb-42c7-8fd0-f01581f8b312}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\7zip">
+      <UniqueIdentifier>{001de466-9375-46a9-a13b-ab02e8d6319f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\unrar">
+      <UniqueIdentifier>{4446c6f1-345b-413f-b262-088b88ea103c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\unrar">
+      <UniqueIdentifier>{c051e81b-203a-4816-9628-9e8e94cdc38b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\zlib">
+      <UniqueIdentifier>{d35f8dcc-fd0a-49db-b78e-c1739c8b63ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\zlib">
+      <UniqueIdentifier>{1dac41fb-66ce-478f-88a7-eacc0a291156}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="fex\fex.h">
+      <Filter>头文件\Fex</Filter>
+    </ClInclude>
+    <ClInclude Include="fex\blargg_config.h">
+      <Filter>头文件\Fex</Filter>
+    </ClInclude>
+    <ClInclude Include="fex\Zlib_Inflater.h">
+      <Filter>头文件\Fex</Filter>
+    </ClInclude>
+    <ClInclude Include="fex\Binary_Extractor.h">
+      <Filter>头文件\Fex</Filter>
+    </ClInclude>
+    <ClInclude Include="fex\blargg_common.h">
+      <Filter>头文件\Fex</Filter>
+    </ClInclude>
+    <ClInclude Include="fex\blargg_endian.h">
+      <Filter>头文件\Fex</Filter>
+    </ClInclude>
+    <ClInclude Include="fex\blargg_errors.h">
+      <Filter>头文件\Fex</Filter>
+    </ClInclude>
+    <ClInclude Include="fex\blargg_source.h">
+      <Filter>头文件\Fex</Filter>
+    </ClInclude>
+    <ClInclude Include="fex\Data_Reader.h">
+      <Filter>头文件\Fex</Filter>
+    </ClInclude>
+    <ClInclude Include="fex\File_Extractor.h">
+      <Filter>头文件\Fex</Filter>
+    </ClInclude>
+    <ClInclude Include="fex\Gzip_Extractor.h">
+      <Filter>头文件\Fex</Filter>
+    </ClInclude>
+    <ClInclude Include="fex\Gzip_Reader.h">
+      <Filter>头文件\Fex</Filter>
+    </ClInclude>
+    <ClInclude Include="fex\Rar_Extractor.h">
+      <Filter>头文件\Fex</Filter>
+    </ClInclude>
+    <ClInclude Include="fex\Zip7_Extractor.h">
+      <Filter>头文件\Fex</Filter>
+    </ClInclude>
+    <ClInclude Include="fex\Zip_Extractor.h">
+      <Filter>头文件\Fex</Filter>
+    </ClInclude>
+    <ClInclude Include="7z_C\Types.h">
+      <Filter>头文件\7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="7z_C\7zAlloc.h">
+      <Filter>头文件\7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="7z_C\7zBuf.h">
+      <Filter>头文件\7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="7z_C\7zCrc.h">
+      <Filter>头文件\7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="7z_C\7zDecode.h">
+      <Filter>头文件\7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="7z_C\7zExtract.h">
+      <Filter>头文件\7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="7z_C\7zHeader.h">
+      <Filter>头文件\7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="7z_C\7zIn.h">
+      <Filter>头文件\7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="7z_C\7zItem.h">
+      <Filter>头文件\7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="7z_C\Bcj2.h">
+      <Filter>头文件\7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="7z_C\Bra.h">
+      <Filter>头文件\7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="7z_C\CpuArch.h">
+      <Filter>头文件\7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="7z_C\LzmaDec.h">
+      <Filter>头文件\7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="unrar\unrar.h">
+      <Filter>头文件\unrar</Filter>
+    </ClInclude>
+    <ClInclude Include="unrar\archive.hpp">
+      <Filter>头文件\unrar</Filter>
+    </ClInclude>
+    <ClInclude Include="unrar\array.hpp">
+      <Filter>头文件\unrar</Filter>
+    </ClInclude>
+    <ClInclude Include="unrar\coder.hpp">
+      <Filter>头文件\unrar</Filter>
+    </ClInclude>
+    <ClInclude Include="unrar\compress.hpp">
+      <Filter>头文件\unrar</Filter>
+    </ClInclude>
+    <ClInclude Include="unrar\encname.hpp">
+      <Filter>头文件\unrar</Filter>
+    </ClInclude>
+    <ClInclude Include="unrar\getbits.hpp">
+      <Filter>头文件\unrar</Filter>
+    </ClInclude>
+    <ClInclude Include="unrar\headers.hpp">
+      <Filter>头文件\unrar</Filter>
+    </ClInclude>
+    <ClInclude Include="unrar\model.hpp">
+      <Filter>头文件\unrar</Filter>
+    </ClInclude>
+    <ClInclude Include="unrar\rar.hpp">
+      <Filter>头文件\unrar</Filter>
+    </ClInclude>
+    <ClInclude Include="unrar\rarvm.hpp">
+      <Filter>头文件\unrar</Filter>
+    </ClInclude>
+    <ClInclude Include="unrar\rawread.hpp">
+      <Filter>头文件\unrar</Filter>
+    </ClInclude>
+    <ClInclude Include="unrar\suballoc.hpp">
+      <Filter>头文件\unrar</Filter>
+    </ClInclude>
+    <ClInclude Include="unrar\unicode.hpp">
+      <Filter>头文件\unrar</Filter>
+    </ClInclude>
+    <ClInclude Include="unrar\unpack.hpp">
+      <Filter>头文件\unrar</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\zutil.h">
+      <Filter>头文件\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\crc32.h">
+      <Filter>头文件\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\inffast.h">
+      <Filter>头文件\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\inffixed.h">
+      <Filter>头文件\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\inflate.h">
+      <Filter>头文件\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\inftrees.h">
+      <Filter>头文件\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\zconf.h">
+      <Filter>头文件\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\zlib.h">
+      <Filter>头文件\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="ZipControlTool.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="fex\Binary_Extractor.cpp">
+      <Filter>源文件\Fex</Filter>
+    </ClCompile>
+    <ClCompile Include="fex\Zlib_Inflater.cpp">
+      <Filter>源文件\Fex</Filter>
+    </ClCompile>
+    <ClCompile Include="fex\blargg_common.cpp">
+      <Filter>源文件\Fex</Filter>
+    </ClCompile>
+    <ClCompile Include="fex\blargg_errors.cpp">
+      <Filter>源文件\Fex</Filter>
+    </ClCompile>
+    <ClCompile Include="fex\Data_Reader.cpp">
+      <Filter>源文件\Fex</Filter>
+    </ClCompile>
+    <ClCompile Include="fex\fex.cpp">
+      <Filter>源文件\Fex</Filter>
+    </ClCompile>
+    <ClCompile Include="fex\File_Extractor.cpp">
+      <Filter>源文件\Fex</Filter>
+    </ClCompile>
+    <ClCompile Include="fex\Gzip_Extractor.cpp">
+      <Filter>源文件\Fex</Filter>
+    </ClCompile>
+    <ClCompile Include="fex\Gzip_Reader.cpp">
+      <Filter>源文件\Fex</Filter>
+    </ClCompile>
+    <ClCompile Include="fex\Rar_Extractor.cpp">
+      <Filter>源文件\Fex</Filter>
+    </ClCompile>
+    <ClCompile Include="fex\Zip7_Extractor.cpp">
+      <Filter>源文件\Fex</Filter>
+    </ClCompile>
+    <ClCompile Include="fex\Zip_Extractor.cpp">
+      <Filter>源文件\Fex</Filter>
+    </ClCompile>
+    <ClCompile Include="7z_C\7zAlloc.c">
+      <Filter>源文件\7Zip</Filter>
+    </ClCompile>
+    <ClCompile Include="7z_C\7zBuf.c">
+      <Filter>源文件\7Zip</Filter>
+    </ClCompile>
+    <ClCompile Include="7z_C\7zCrc.c">
+      <Filter>源文件\7Zip</Filter>
+    </ClCompile>
+    <ClCompile Include="7z_C\7zDecode.c">
+      <Filter>源文件\7Zip</Filter>
+    </ClCompile>
+    <ClCompile Include="7z_C\7zExtract.c">
+      <Filter>源文件\7Zip</Filter>
+    </ClCompile>
+    <ClCompile Include="7z_C\7zHeader.c">
+      <Filter>源文件\7Zip</Filter>
+    </ClCompile>
+    <ClCompile Include="7z_C\7zIn.c">
+      <Filter>源文件\7Zip</Filter>
+    </ClCompile>
+    <ClCompile Include="7z_C\7zItem.c">
+      <Filter>源文件\7Zip</Filter>
+    </ClCompile>
+    <ClCompile Include="7z_C\7zStream.c">
+      <Filter>源文件\7Zip</Filter>
+    </ClCompile>
+    <ClCompile Include="7z_C\Bcj2.c">
+      <Filter>源文件\7Zip</Filter>
+    </ClCompile>
+    <ClCompile Include="7z_C\Bra86.c">
+      <Filter>源文件\7Zip</Filter>
+    </ClCompile>
+    <ClCompile Include="7z_C\LzmaDec.c">
+      <Filter>源文件\7Zip</Filter>
+    </ClCompile>
+    <ClCompile Include="demo.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="unrar\unrar_open.cpp">
+      <Filter>源文件\unrar</Filter>
+    </ClCompile>
+    <ClCompile Include="unrar\archive.cpp">
+      <Filter>源文件\unrar</Filter>
+    </ClCompile>
+    <ClCompile Include="unrar\arcread.cpp">
+      <Filter>源文件\unrar</Filter>
+    </ClCompile>
+    <ClCompile Include="unrar\coder.cpp">
+      <Filter>源文件\unrar</Filter>
+    </ClCompile>
+    <ClCompile Include="unrar\crc.cpp">
+      <Filter>源文件\unrar</Filter>
+    </ClCompile>
+    <ClCompile Include="unrar\encname.cpp">
+      <Filter>源文件\unrar</Filter>
+    </ClCompile>
+    <ClCompile Include="unrar\extract.cpp">
+      <Filter>源文件\unrar</Filter>
+    </ClCompile>
+    <ClCompile Include="unrar\getbits.cpp">
+      <Filter>源文件\unrar</Filter>
+    </ClCompile>
+    <ClCompile Include="unrar\model.cpp">
+      <Filter>源文件\unrar</Filter>
+    </ClCompile>
+    <ClCompile Include="unrar\rarvm.cpp">
+      <Filter>源文件\unrar</Filter>
+    </ClCompile>
+    <ClCompile Include="unrar\rarvmtbl.cpp">
+      <Filter>源文件\unrar</Filter>
+    </ClCompile>
+    <ClCompile Include="unrar\rawread.cpp">
+      <Filter>源文件\unrar</Filter>
+    </ClCompile>
+    <ClCompile Include="unrar\suballoc.cpp">
+      <Filter>源文件\unrar</Filter>
+    </ClCompile>
+    <ClCompile Include="unrar\unicode.cpp">
+      <Filter>源文件\unrar</Filter>
+    </ClCompile>
+    <ClCompile Include="unrar\unpack15.cpp">
+      <Filter>源文件\unrar</Filter>
+    </ClCompile>
+    <ClCompile Include="unrar\unpack20.cpp">
+      <Filter>源文件\unrar</Filter>
+    </ClCompile>
+    <ClCompile Include="unrar\unpack.cpp">
+      <Filter>源文件\unrar</Filter>
+    </ClCompile>
+    <ClCompile Include="unrar\unrar.cpp">
+      <Filter>源文件\unrar</Filter>
+    </ClCompile>
+    <ClCompile Include="unrar\unrar_misc.cpp">
+      <Filter>源文件\unrar</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\zutil.c">
+      <Filter>源文件\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\adler32.c">
+      <Filter>源文件\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\crc32.c">
+      <Filter>源文件\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\inffast.c">
+      <Filter>源文件\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\inflate.c">
+      <Filter>源文件\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\inftrees.c">
+      <Filter>源文件\zlib</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

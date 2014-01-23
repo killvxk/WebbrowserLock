@@ -1,0 +1,16 @@
+HKCR
+{
+	NoRemove CLSID
+	{
+		ForceRemove {FD650D41-6D0B-48DE-A91D-6687A8F82381} = s 'System Plugin IELock'
+		{
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{452E73DF-F526-4A7B-BFE8-1661DAEB73F1}'
+			Version = s '1.0'
+		}
+	}
+}

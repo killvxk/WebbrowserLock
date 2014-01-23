@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="7z_C\7zAlloc.h" />
+    <ClInclude Include="7z_C\7zBuf.h" />
+    <ClInclude Include="7z_C\7zCrc.h" />
+    <ClInclude Include="7z_C\7zDecode.h" />
+    <ClInclude Include="7z_C\7zExtract.h" />
+    <ClInclude Include="7z_C\7zHeader.h" />
+    <ClInclude Include="7z_C\7zIn.h" />
+    <ClInclude Include="7z_C\7zItem.h" />
+    <ClInclude Include="7z_C\Bcj2.h" />
+    <ClInclude Include="7z_C\Bra.h" />
+    <ClInclude Include="7z_C\CpuArch.h" />
+    <ClInclude Include="7z_C\LzmaDec.h" />
+    <ClInclude Include="7z_C\Types.h" />
+    <ClInclude Include="fex\Binary_Extractor.h" />
+    <ClInclude Include="fex\blargg_common.h" />
+    <ClInclude Include="fex\blargg_config.h" />
+    <ClInclude Include="fex\blargg_endian.h" />
+    <ClInclude Include="fex\blargg_errors.h" />
+    <ClInclude Include="fex\blargg_source.h" />
+    <ClInclude Include="fex\Data_Reader.h" />
+    <ClInclude Include="fex\fex.h" />
+    <ClInclude Include="fex\File_Extractor.h" />
+    <ClInclude Include="fex\Gzip_Extractor.h" />
+    <ClInclude Include="fex\Gzip_Reader.h" />
+    <ClInclude Include="fex\Rar_Extractor.h" />
+    <ClInclude Include="fex\Zip7_Extractor.h" />
+    <ClInclude Include="fex\Zip_Extractor.h" />
+    <ClInclude Include="fex\Zlib_Inflater.h" />
+    <ClInclude Include="unrar\archive.hpp" />
+    <ClInclude Include="unrar\array.hpp" />
+    <ClInclude Include="unrar\coder.hpp" />
+    <ClInclude Include="unrar\compress.hpp" />
+    <ClInclude Include="unrar\encname.hpp" />
+    <ClInclude Include="unrar\getbits.hpp" />
+    <ClInclude Include="unrar\headers.hpp" />
+    <ClInclude Include="unrar\model.hpp" />
+    <ClInclude Include="unrar\rar.hpp" />
+    <ClInclude Include="unrar\rarvm.hpp" />
+    <ClInclude Include="unrar\rawread.hpp" />
+    <ClInclude Include="unrar\suballoc.hpp" />
+    <ClInclude Include="unrar\unicode.hpp" />
+    <ClInclude Include="unrar\unpack.hpp" />
+    <ClInclude Include="unrar\unrar.h" />
+    <ClInclude Include="ZipControlTool.h" />
+    <ClInclude Include="zlib\crc32.h" />
+    <ClInclude Include="zlib\inffast.h" />
+    <ClInclude Include="zlib\inffixed.h" />
+    <ClInclude Include="zlib\inflate.h" />
+    <ClInclude Include="zlib\inftrees.h" />
+    <ClInclude Include="zlib\zconf.h" />
+    <ClInclude Include="zlib\zlib.h" />
+    <ClInclude Include="zlib\zutil.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="7z_C\7zAlloc.c" />
+    <ClCompile Include="7z_C\7zBuf.c" />
+    <ClCompile Include="7z_C\7zCrc.c" />
+    <ClCompile Include="7z_C\7zDecode.c" />
+    <ClCompile Include="7z_C\7zExtract.c" />
+    <ClCompile Include="7z_C\7zHeader.c" />
+    <ClCompile Include="7z_C\7zIn.c" />
+    <ClCompile Include="7z_C\7zItem.c" />
+    <ClCompile Include="7z_C\7zStream.c" />
+    <ClCompile Include="7z_C\Bcj2.c" />
+    <ClCompile Include="7z_C\Bra86.c" />
+    <ClCompile Include="7z_C\LzmaDec.c" />
+    <ClCompile Include="demo.c" />
+    <ClCompile Include="fex\Binary_Extractor.cpp" />
+    <ClCompile Include="fex\blargg_common.cpp" />
+    <ClCompile Include="fex\blargg_errors.cpp" />
+    <ClCompile Include="fex\Data_Reader.cpp" />
+    <ClCompile Include="fex\fex.cpp" />
+    <ClCompile Include="fex\File_Extractor.cpp" />
+    <ClCompile Include="fex\Gzip_Extractor.cpp" />
+    <ClCompile Include="fex\Gzip_Reader.cpp" />
+    <ClCompile Include="fex\Rar_Extractor.cpp" />
+    <ClCompile Include="fex\Zip7_Extractor.cpp" />
+    <ClCompile Include="fex\Zip_Extractor.cpp" />
+    <ClCompile Include="fex\Zlib_Inflater.cpp" />
+    <ClCompile Include="unrar\archive.cpp" />
+    <ClCompile Include="unrar\arcread.cpp" />
+    <ClCompile Include="unrar\coder.cpp" />
+    <ClCompile Include="unrar\crc.cpp" />
+    <ClCompile Include="unrar\encname.cpp" />
+    <ClCompile Include="unrar\extract.cpp" />
+    <ClCompile Include="unrar\getbits.cpp" />
+    <ClCompile Include="unrar\model.cpp" />
+    <ClCompile Include="unrar\rarvm.cpp" />
+    <ClCompile Include="unrar\rarvmtbl.cpp" />
+    <ClCompile Include="unrar\rawread.cpp" />
+    <ClCompile Include="unrar\suballoc.cpp" />
+    <ClCompile Include="unrar\unicode.cpp" />
+    <ClCompile Include="unrar\unpack.cpp" />
+    <ClCompile Include="unrar\unpack15.cpp" />
+    <ClCompile Include="unrar\unpack20.cpp" />
+    <ClCompile Include="unrar\unrar.cpp" />
+    <ClCompile Include="unrar\unrar_misc.cpp" />
+    <ClCompile Include="unrar\unrar_open.cpp" />
+    <ClCompile Include="zlib\adler32.c" />
+    <ClCompile Include="zlib\crc32.c" />
+    <ClCompile Include="zlib\inffast.c" />
+    <ClCompile Include="zlib\inflate.c" />
+    <ClCompile Include="zlib\inftrees.c" />
+    <ClCompile Include="zlib\zutil.c" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{39421B8C-2A9A-4208-A267-1C97DB9D0025}</ProjectGuid>
+    <RootNamespace>SystemUpDataTest</RootNamespace>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)LIB\Function\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>$(SolutionDir)$(MSBuildProjectDefaultTargets)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)LIB\Function\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>$(SolutionDir)$(MSBuildProjectDefaultTargets)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>
+      </WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>zlib;..\..\interface\Plugin;..\..\LP;..\..\Function;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(SolutionDir)PDB\$(RootNamespace)\$(Configuration)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PreprocessorDefinitions>NEW_LP;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MultiProcessorCompilation>
+      </MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PreBuildEvent>
+      <Command>"$(SolutionDir)\Build.exe"</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>
+      </WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <ProgramDataBaseFileName>$(SolutionDir)PDB\$(RootNamespace)\$(Configuration)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>zlib;..\..\interface\Plugin;..\..\LP;..\..\Function;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NEW_LP;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PreBuildEvent>
+      <Command>"$(SolutionDir)\Build.exe"</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

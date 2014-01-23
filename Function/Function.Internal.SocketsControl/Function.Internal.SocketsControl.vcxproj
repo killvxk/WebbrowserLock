@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Enterprise|Win32">
+      <Configuration>Enterprise</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Express|Win32">
+      <Configuration>Express</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Free|Win32">
+      <Configuration>Free</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{47AE7B3C-E415-4441-8828-10B1B6BA63B1}</ProjectGuid>
+    <RootNamespace>FunctionExternalSocket</RootNamespace>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Express|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Free|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Enterprise|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Express|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Free|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Enterprise|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)LIB\Function\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>$(SolutionDir)$(MSBuildProjectDefaultTargets)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)LIB\Function\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>$(SolutionDir)$(MSBuildProjectDefaultTargets)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Enterprise|Win32'">
+    <IntDir>$(SolutionDir)$(MSBuildProjectDefaultTargets)\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)LIB\Function\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Express|Win32'">
+    <IntDir>$(SolutionDir)$(MSBuildProjectDefaultTargets)\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)LIB\Function\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Free|Win32'">
+    <IntDir>$(SolutionDir)$(MSBuildProjectDefaultTargets)\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)LIB\Function\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>
+      </WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <ProgramDataBaseFileName>$(SolutionDir)PDB\$(RootNamespace)\$(Configuration)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <AdditionalIncludeDirectories>..\..\;..\..\Plugins\;..\..\interface\Plugin;..\..\LP;..\..\Function;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>
+      </MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PreBuildEvent>
+      <Command>"$(SolutionDir)\Build.exe"</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Express|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <ProgramDataBaseFileName>$(SolutionDir)PDB\$(RootNamespace)\$(Configuration)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <AdditionalIncludeDirectories>..\..\interface\Plugin;..\..\LP;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessorDefinitions>NEW_LP;WIN32;_LIB;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ProgramDataBaseFileName>$(SolutionDir)PDB\$(RootNamespace)\$(Configuration)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <AdditionalIncludeDirectories>..\..\;..\..\Plugins\;..\..\interface\Plugin;..\..\LP;..\..\Function;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <WarningLevel>
+      </WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PreBuildEvent>
+      <Command>"$(SolutionDir)\Build.exe"</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Free|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ProgramDataBaseFileName>$(SolutionDir)PDB\$(RootNamespace)\$(Configuration)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <AdditionalIncludeDirectories>..\..\interface\Plugin;..\..\LP;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Enterprise|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ProgramDataBaseFileName>$(SolutionDir)PDB\$(RootNamespace)\$(Configuration)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <AdditionalIncludeDirectories>..\..\interface\Plugin;..\..\LP;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Sockets\Exception.cpp" />
+    <ClCompile Include="Sockets\socket_include.cpp" />
+    <ClCompile Include="Sockets\Base64.cpp" />
+    <ClCompile Include="Sockets\Debug.cpp" />
+    <ClCompile Include="Sockets\Parse.cpp" />
+    <ClCompile Include="Sockets\Utility.cpp" />
+    <ClCompile Include="Sockets\SSLInitializer.cpp" />
+    <ClCompile Include="Sockets\Ajp13Socket.cpp" />
+    <ClCompile Include="Sockets\AjpBaseSocket.cpp" />
+    <ClCompile Include="Sockets\HttpBaseSocket.cpp" />
+    <ClCompile Include="Sockets\HttpdCookies.cpp" />
+    <ClCompile Include="Sockets\HttpdForm.cpp" />
+    <ClCompile Include="Sockets\HttpdSocket.cpp" />
+    <ClCompile Include="Sockets\HttpRequest.cpp" />
+    <ClCompile Include="Sockets\HttpResponse.cpp" />
+    <ClCompile Include="Sockets\HttpTransaction.cpp" />
+    <ClCompile Include="Sockets\HttpClientSocket.cpp" />
+    <ClCompile Include="Sockets\HttpDebugSocket.cpp" />
+    <ClCompile Include="Sockets\HttpGetSocket.cpp" />
+    <ClCompile Include="Sockets\HttpPostSocket.cpp" />
+    <ClCompile Include="Sockets\HttpPutSocket.cpp" />
+    <ClCompile Include="Sockets\HTTPSocket.cpp" />
+    <ClCompile Include="Sockets\File.cpp" />
+    <ClCompile Include="Sockets\MemFile.cpp" />
+    <ClCompile Include="Sockets\ResolvServer.cpp" />
+    <ClCompile Include="Sockets\ResolvSocket.cpp" />
+    <ClCompile Include="Sockets\Ipv4Address.cpp" />
+    <ClCompile Include="Sockets\Ipv6Address.cpp" />
+    <ClCompile Include="Sockets\SctpSocket.cpp" />
+    <ClCompile Include="Sockets\Socket.cpp" />
+    <ClCompile Include="Sockets\SocketHandler.cpp" />
+    <ClCompile Include="Sockets\SocketHandlerThread.cpp" />
+    <ClCompile Include="Sockets\SocketThread.cpp" />
+    <ClCompile Include="Sockets\StreamSocket.cpp" />
+    <ClCompile Include="Sockets\TcpSocket.cpp" />
+    <ClCompile Include="Sockets\UdpSocket.cpp" />
+    <ClCompile Include="Sockets\StdoutLog.cpp" />
+    <ClCompile Include="Sockets\Lock.cpp" />
+    <ClCompile Include="Sockets\Mutex.cpp" />
+    <ClCompile Include="Sockets\Semaphore.cpp" />
+    <ClCompile Include="Sockets\Thread.cpp" />
+    <ClCompile Include="Sockets\Event.cpp" />
+    <ClCompile Include="Sockets\EventHandler.cpp" />
+    <ClCompile Include="Sockets\EventTime.cpp" />
+    <ClCompile Include="Sockets\IEventOwner.cpp" />
+    <ClCompile Include="Sockets\SmtpdSocket.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Sockets\Exception.h" />
+    <ClInclude Include="Sockets\socket_include.h" />
+    <ClInclude Include="Sockets\sockets-config.h" />
+    <ClInclude Include="Sockets\Base64.h" />
+    <ClInclude Include="Sockets\Debug.h" />
+    <ClInclude Include="Sockets\Parse.h" />
+    <ClInclude Include="Sockets\Utility.h" />
+    <ClInclude Include="Sockets\SSLInitializer.h" />
+    <ClInclude Include="Sockets\ajp13.h" />
+    <ClInclude Include="Sockets\Ajp13Socket.h" />
+    <ClInclude Include="Sockets\AjpBaseSocket.h" />
+    <ClInclude Include="Sockets\HttpBaseSocket.h" />
+    <ClInclude Include="Sockets\HttpdCookies.h" />
+    <ClInclude Include="Sockets\HttpdForm.h" />
+    <ClInclude Include="Sockets\HttpdSocket.h" />
+    <ClInclude Include="Sockets\HttpRequest.h" />
+    <ClInclude Include="Sockets\HttpResponse.h" />
+    <ClInclude Include="Sockets\HttpTransaction.h" />
+    <ClInclude Include="Sockets\IHttpServer.h" />
+    <ClInclude Include="Sockets\HttpClientSocket.h" />
+    <ClInclude Include="Sockets\HttpDebugSocket.h" />
+    <ClInclude Include="Sockets\HttpGetSocket.h" />
+    <ClInclude Include="Sockets\HttpPostSocket.h" />
+    <ClInclude Include="Sockets\HttpPutSocket.h" />
+    <ClInclude Include="Sockets\HTTPSocket.h" />
+    <ClInclude Include="Sockets\File.h" />
+    <ClInclude Include="Sockets\IFile.h" />
+    <ClInclude Include="Sockets\MemFile.h" />
+    <ClInclude Include="Sockets\ResolvServer.h" />
+    <ClInclude Include="Sockets\ResolvSocket.h" />
+    <ClInclude Include="Sockets\Ipv4Address.h" />
+    <ClInclude Include="Sockets\Ipv6Address.h" />
+    <ClInclude Include="Sockets\ISocketHandler.h" />
+    <ClInclude Include="Sockets\ListenSocket.h" />
+    <ClInclude Include="Sockets\SctpSocket.h" />
+    <ClInclude Include="Sockets\Socket.h" />
+    <ClInclude Include="Sockets\SocketAddress.h" />
+    <ClInclude Include="Sockets\SocketHandler.h" />
+    <ClInclude Include="Sockets\SocketHandlerThread.h" />
+    <ClInclude Include="Sockets\SocketThread.h" />
+    <ClInclude Include="Sockets\StreamSocket.h" />
+    <ClInclude Include="Sockets\TcpSocket.h" />
+    <ClInclude Include="Sockets\UdpSocket.h" />
+    <ClInclude Include="Sockets\StdLog.h" />
+    <ClInclude Include="Sockets\StdoutLog.h" />
+    <ClInclude Include="Sockets\Lock.h" />
+    <ClInclude Include="Sockets\Mutex.h" />
+    <ClInclude Include="Sockets\Semaphore.h" />
+    <ClInclude Include="Sockets\Thread.h" />
+    <ClInclude Include="Sockets\Event.h" />
+    <ClInclude Include="Sockets\EventHandler.h" />
+    <ClInclude Include="Sockets\EventTime.h" />
+    <ClInclude Include="Sockets\IEventHandler.h" />
+    <ClInclude Include="Sockets\IEventOwner.h" />
+    <ClInclude Include="Sockets\SmtpdSocket.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Enterprise|Win32">
+      <Configuration>Enterprise</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Express|Win32">
+      <Configuration>Express</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Free|Win32">
+      <Configuration>Free</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{724B8CE5-6D58-47AA-877A-20CE8F795002}</ProjectGuid>
+    <RootNamespace>FunctionExternalSocket</RootNamespace>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Express|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Free|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Enterprise|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Express|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Free|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Enterprise|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)LIB\Function\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>$(SolutionDir)$(MSBuildProjectDefaultTargets)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)LIB\Function\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>$(SolutionDir)$(MSBuildProjectDefaultTargets)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Enterprise|Win32'">
+    <IntDir>$(SolutionDir)$(MSBuildProjectDefaultTargets)\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)LIB\Function\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Express|Win32'">
+    <IntDir>$(SolutionDir)$(MSBuildProjectDefaultTargets)\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)LIB\Function\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Free|Win32'">
+    <IntDir>$(SolutionDir)$(MSBuildProjectDefaultTargets)\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)LIB\Function\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>
+      </WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <ProgramDataBaseFileName>$(SolutionDir)PDB\$(RootNamespace)\$(Configuration)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <AdditionalIncludeDirectories>..\..\;..\..\Plugins\;..\..\interface\Plugin;..\..\LP;..\..\Function;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>
+      </MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PreBuildEvent>
+      <Command>"$(SolutionDir)\Build.exe"</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Express|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <ProgramDataBaseFileName>$(SolutionDir)PDB\$(RootNamespace)\$(Configuration)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <AdditionalIncludeDirectories>..\..\interface\Plugin;..\..\LP;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessorDefinitions>NEW_LP;WIN32;_LIB;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ProgramDataBaseFileName>$(SolutionDir)PDB\$(RootNamespace)\$(Configuration)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <AdditionalIncludeDirectories>..\..\;..\..\Plugins\;..\..\interface\Plugin;..\..\LP;..\..\Function;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <WarningLevel>
+      </WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PreBuildEvent>
+      <Command>"$(SolutionDir)\Build.exe"</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Free|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ProgramDataBaseFileName>$(SolutionDir)PDB\$(RootNamespace)\$(Configuration)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <AdditionalIncludeDirectories>..\..\interface\Plugin;..\..\LP;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Enterprise|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ProgramDataBaseFileName>$(SolutionDir)PDB\$(RootNamespace)\$(Configuration)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <AdditionalIncludeDirectories>..\..\interface\Plugin;..\..\LP;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\Frame\netserver\EpollFrame.h" />
+    <ClInclude Include="Include\Frame\netserver\EpollMonitor.h" />
+    <ClInclude Include="Include\Frame\netserver\IOCPFrame.h" />
+    <ClInclude Include="Include\Frame\netserver\IOCPMonitor.h" />
+    <ClInclude Include="Include\Frame\netserver\NetConnect.h" />
+    <ClInclude Include="Include\Frame\netserver\NetEngine.h" />
+    <ClInclude Include="Include\Frame\netserver\NetEventMonitor.h" />
+    <ClInclude Include="Include\Frame\netserver\NetHost.h" />
+    <ClInclude Include="Include\Frame\netserver\NetServer.h" />
+    <ClInclude Include="Include\Frame\netserver\STEpoll.h" />
+    <ClInclude Include="Include\Frame\netserver\STIocp.h" />
+    <ClInclude Include="Include\Frame\netserver\STNetConnect.h" />
+    <ClInclude Include="Include\Frame\netserver\STNetEngine.h" />
+    <ClInclude Include="Include\Frame\netserver\STNetHost.h" />
+    <ClInclude Include="Include\Frame\netserver\STNetServer.h" />
+    <ClInclude Include="Include\Mdk\atom.h" />
+    <ClInclude Include="Include\Mdk\ConfigFile.h" />
+    <ClInclude Include="Include\Mdk\Executor.h" />
+    <ClInclude Include="Include\Mdk\FixLengthInt.h" />
+    <ClInclude Include="Include\Mdk\IOBuffer.h" />
+    <ClInclude Include="Include\Mdk\IOBufferBlock.h" />
+    <ClInclude Include="Include\Mdk\Lock.h" />
+    <ClInclude Include="Include\Mdk\Logger.h" />
+    <ClInclude Include="Include\Mdk\mapi.h" />
+    <ClInclude Include="Include\Mdk\MemoryPool.h" />
+    <ClInclude Include="Include\Mdk\Queue.h" />
+    <ClInclude Include="Include\Mdk\SharedPtr.h" />
+    <ClInclude Include="Include\Mdk\ShareMemory.h" />
+    <ClInclude Include="Include\Mdk\Signal.h" />
+    <ClInclude Include="Include\Mdk\Socket.h" />
+    <ClInclude Include="Include\Mdk\Task.h" />
+    <ClInclude Include="Include\Mdk\Thread.h" />
+    <ClInclude Include="Include\Mdk\ThreadPool.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Frame\netserver\EpollFrame.cpp" />
+    <ClCompile Include="Source\Frame\netserver\EpollMonitor.cpp" />
+    <ClCompile Include="Source\Frame\netserver\IOCPFrame.cpp" />
+    <ClCompile Include="Source\Frame\netserver\IOCPMonitor.cpp" />
+    <ClCompile Include="Source\Frame\netserver\NetConnect.cpp" />
+    <ClCompile Include="Source\Frame\netserver\NetEngine.cpp" />
+    <ClCompile Include="Source\Frame\netserver\NetEventMonitor.cpp" />
+    <ClCompile Include="Source\Frame\netserver\NetHost.cpp" />
+    <ClCompile Include="Source\Frame\netserver\NetServer.cpp" />
+    <ClCompile Include="Source\Frame\netserver\STEpoll.cpp" />
+    <ClCompile Include="Source\Frame\netserver\STIocp.cpp" />
+    <ClCompile Include="Source\Frame\netserver\STNetConnect.cpp" />
+    <ClCompile Include="Source\Frame\netserver\STNetEngine.cpp" />
+    <ClCompile Include="Source\Frame\netserver\STNetHost.cpp" />
+    <ClCompile Include="Source\Frame\netserver\STNetServer.cpp" />
+    <ClCompile Include="Source\Mdk\ConfigFile.cpp" />
+    <ClCompile Include="Source\Mdk\Executor.cpp" />
+    <ClCompile Include="Source\Mdk\IOBuffer.cpp" />
+    <ClCompile Include="Source\Mdk\IOBufferBlock.cpp" />
+    <ClCompile Include="Source\Mdk\Lock.cpp" />
+    <ClCompile Include="Source\Mdk\Logger.cpp" />
+    <ClCompile Include="Source\Mdk\mapi.cpp" />
+    <ClCompile Include="Source\Mdk\MemoryPool.cpp" />
+    <ClCompile Include="Source\Mdk\Queue.cpp" />
+    <ClCompile Include="Source\Mdk\ShareMemory.cpp" />
+    <ClCompile Include="Source\Mdk\Signal.cpp" />
+    <ClCompile Include="Source\Mdk\Socket.cpp" />
+    <ClCompile Include="Source\Mdk\Task.cpp" />
+    <ClCompile Include="Source\Mdk\Thread.cpp" />
+    <ClCompile Include="Source\Mdk\ThreadPool.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

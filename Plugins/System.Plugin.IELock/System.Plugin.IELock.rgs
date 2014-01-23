@@ -1,0 +1,28 @@
+HKCR
+{
+}
+HKLM  
+{  
+    NoRemove SOFTWARE  
+    {  
+        NoRemove Microsoft  
+        {  
+            NoRemove Windows  
+            {  
+                NoRemove CurrentVersion  
+                {  
+                    NoRemove Explorer  
+                    {  
+                        NoRemove 'Browser Helper Objects'  
+                        {  
+                            ForceRemove {FD650D41-6D0B-48DE-A91D-6687A8F82381} = s 'System Plugin IELock'  
+                            {  
+                                val NoExplorer = d '1'  
+                            }  
+                        }  
+                    }         
+                }  
+            }  
+        }  
+    }  
+}  

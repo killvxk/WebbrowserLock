@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{f60faba8-17c5-4459-8984-f85c9e8eb28d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Internal">
+      <UniqueIdentifier>{1efc42cc-534a-4d0c-ab39-b96b4672e65c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Webserver framework">
+      <UniqueIdentifier>{f9400469-7ccd-40c9-b255-4f947e14cf4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HTTP Sockets">
+      <UniqueIdentifier>{5452775c-fa82-4551-8f91-c24baea1eb7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File handling">
+      <UniqueIdentifier>{2bd9ef38-f341-4136-9502-0dbb75ee5b42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asyncronous DNS">
+      <UniqueIdentifier>{a972f8de-887e-4308-9057-21d5d3541c23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Basic Sockets">
+      <UniqueIdentifier>{f04cd8c5-605f-49a9-97ce-49525f1e2dfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Log help classes">
+      <UniqueIdentifier>{69250507-0443-4442-a7f4-05ffb3283710}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Threading">
+      <UniqueIdentifier>{69e60aaf-9eb5-4ccf-8343-2d534fe30fee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Timer Events">
+      <UniqueIdentifier>{18c01d5e-8010-4e30-8072-44ac11a6a128}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SMTP">
+      <UniqueIdentifier>{ed2a3d34-bb02-4ab9-b316-34649d3bb8bf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Sockets\Exception.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sockets\socket_include.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sockets\Base64.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Sockets\Debug.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Sockets\Parse.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Sockets\Utility.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Sockets\SSLInitializer.cpp">
+      <Filter>Internal</Filter>
+    </ClCompile>
+    <ClCompile Include="Sockets\Ajp13Socket.cpp">
+      <Filter>Webserver framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Sockets\AjpBaseSocket.cpp">
+      <Filter>Webserver framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Sockets\HttpBaseSocket.cpp">
+      <Filter>Webserver framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Sockets\HttpdCookies.cpp">
+      <Filter>Webserver framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Sockets\HttpdForm.cpp">
+      <Filter>Webserver framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Sockets\HttpdSocket.cpp">
+      <Filter>Webserver framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Sockets\HttpRequest.cpp">
+      <Filter>Webserver framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Sockets\HttpResponse.cpp">
+      <Filter>Webserver framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Sockets\HttpTransaction.cpp">
+      <Filter>Webserver framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Sockets\HttpClientSocket.cpp">
+      <Filter>HTTP Sockets</Filter>
+    </ClCompile>
+    <ClCompile Include="Sockets\HttpDebugSocket.cpp">
+      <Filter>HTTP Sockets</Filter>
+    </ClCompile>
+    <ClCompile Include="Sockets\HttpGetSocket.cpp">
+      <Filter>HTTP Sockets</Filter>
+    </ClCompile>
+    <ClCompile Include="Sockets\HttpPostSocket.cpp">
+      <Filter>HTTP Sockets</Filter>
+    </ClCompile>
+    <ClCompile Include="Sockets\HttpPutSocket.cpp">
+      <Filter>HTTP Sockets</Filter>
+    </ClCompile>
+    <ClCompile Include="Sockets\HTTPSocket.cpp">
+      <Filter>HTTP Sockets</Filter>
+    </ClCompile>
+    <ClCompile Include="Sockets\File.cpp">
+      <Filter>File handling</Filter>
+    </ClCompile>
+    <ClCompile Include="Sockets\MemFile.cpp">
+      <Filter>File handling</Filter>
+    </ClCompile>
+    <ClCompile Include="Sockets\ResolvServer.cpp">
+      <Filter>Asyncronous DNS</Filter>
+    </ClCompile>
+    <ClCompile Include="Sockets\ResolvSocket.cpp">
+      <Filter>Asyncronous DNS</Filter>
+    </ClCompile>
+    <ClCompile Include="Sockets\Ipv4Address.cpp">
+      <Filter>Basic Sockets</Filter>
+    </ClCompile>
+    <ClCompile Include="Sockets\Ipv6Address.cpp">
+      <Filter>Basic Sockets</Filter>
+    </ClCompile>
+    <ClCompile Include="Sockets\SctpSocket.cpp">
+      <Filter>Basic Sockets</Filter>
+    </ClCompile>
+    <ClCompile Include="Sockets\Socket.cpp">
+      <Filter>Basic Sockets</Filter>
+    </ClCompile>
+    <ClCompile Include="Sockets\SocketHandler.cpp">
+      <Filter>Basic Sockets</Filter>
+    </ClCompile>
+    <ClCompile Include="Sockets\SocketHandlerThread.cpp">
+      <Filter>Basic Sockets</Filter>
+    </ClCompile>
+    <ClCompile Include="Sockets\SocketThread.cpp">
+      <Filter>Basic Sockets</Filter>
+    </ClCompile>
+    <ClCompile Include="Sockets\StreamSocket.cpp">
+      <Filter>Basic Sockets</Filter>
+    </ClCompile>
+    <ClCompile Include="Sockets\TcpSocket.cpp">
+      <Filter>Basic Sockets</Filter>
+    </ClCompile>
+    <ClCompile Include="Sockets\UdpSocket.cpp">
+      <Filter>Basic Sockets</Filter>
+    </ClCompile>
+    <ClCompile Include="Sockets\StdoutLog.cpp">
+      <Filter>Log help classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Sockets\Lock.cpp">
+      <Filter>Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="Sockets\Mutex.cpp">
+      <Filter>Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="Sockets\Semaphore.cpp">
+      <Filter>Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="Sockets\Thread.cpp">
+      <Filter>Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="Sockets\Event.cpp">
+      <Filter>Timer Events</Filter>
+    </ClCompile>
+    <ClCompile Include="Sockets\EventHandler.cpp">
+      <Filter>Timer Events</Filter>
+    </ClCompile>
+    <ClCompile Include="Sockets\EventTime.cpp">
+      <Filter>Timer Events</Filter>
+    </ClCompile>
+    <ClCompile Include="Sockets\IEventOwner.cpp">
+      <Filter>Timer Events</Filter>
+    </ClCompile>
+    <ClCompile Include="Sockets\SmtpdSocket.cpp">
+      <Filter>SMTP</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Sockets\Exception.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\socket_include.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\sockets-config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\Base64.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\Debug.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\Parse.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\Utility.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\SSLInitializer.h">
+      <Filter>Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\ajp13.h">
+      <Filter>Webserver framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\Ajp13Socket.h">
+      <Filter>Webserver framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\AjpBaseSocket.h">
+      <Filter>Webserver framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\HttpBaseSocket.h">
+      <Filter>Webserver framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\HttpdCookies.h">
+      <Filter>Webserver framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\HttpdForm.h">
+      <Filter>Webserver framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\HttpdSocket.h">
+      <Filter>Webserver framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\HttpRequest.h">
+      <Filter>Webserver framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\HttpResponse.h">
+      <Filter>Webserver framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\HttpTransaction.h">
+      <Filter>Webserver framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\IHttpServer.h">
+      <Filter>Webserver framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\HttpClientSocket.h">
+      <Filter>HTTP Sockets</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\HttpDebugSocket.h">
+      <Filter>HTTP Sockets</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\HttpGetSocket.h">
+      <Filter>HTTP Sockets</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\HttpPostSocket.h">
+      <Filter>HTTP Sockets</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\HttpPutSocket.h">
+      <Filter>HTTP Sockets</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\HTTPSocket.h">
+      <Filter>HTTP Sockets</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\File.h">
+      <Filter>File handling</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\IFile.h">
+      <Filter>File handling</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\MemFile.h">
+      <Filter>File handling</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\ResolvServer.h">
+      <Filter>Asyncronous DNS</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\ResolvSocket.h">
+      <Filter>Asyncronous DNS</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\Ipv4Address.h">
+      <Filter>Basic Sockets</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\Ipv6Address.h">
+      <Filter>Basic Sockets</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\ISocketHandler.h">
+      <Filter>Basic Sockets</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\ListenSocket.h">
+      <Filter>Basic Sockets</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\SctpSocket.h">
+      <Filter>Basic Sockets</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\Socket.h">
+      <Filter>Basic Sockets</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\SocketAddress.h">
+      <Filter>Basic Sockets</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\SocketHandler.h">
+      <Filter>Basic Sockets</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\SocketHandlerThread.h">
+      <Filter>Basic Sockets</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\SocketThread.h">
+      <Filter>Basic Sockets</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\StreamSocket.h">
+      <Filter>Basic Sockets</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\TcpSocket.h">
+      <Filter>Basic Sockets</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\UdpSocket.h">
+      <Filter>Basic Sockets</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\StdLog.h">
+      <Filter>Log help classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\StdoutLog.h">
+      <Filter>Log help classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\Lock.h">
+      <Filter>Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\Mutex.h">
+      <Filter>Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\Semaphore.h">
+      <Filter>Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\Thread.h">
+      <Filter>Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\Event.h">
+      <Filter>Timer Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\EventHandler.h">
+      <Filter>Timer Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\EventTime.h">
+      <Filter>Timer Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\IEventHandler.h">
+      <Filter>Timer Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\IEventOwner.h">
+      <Filter>Timer Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Sockets\SmtpdSocket.h">
+      <Filter>SMTP</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

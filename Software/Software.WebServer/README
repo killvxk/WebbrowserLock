@@ -1,0 +1,19 @@
+INSTALL DATABASE
+================
+
+
+Create a mysql database
+
+$ mysqladmin create httpd
+
+
+Import script
+
+$ mysql httpd < str-httpd
+
+
+Build classes (using sql2class:  http://www.alhem.net/project/sql2class/)
+
+$ make db
+
+

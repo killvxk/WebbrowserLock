@@ -1,0 +1,36 @@
+<?xml version='1.0'?>
+ <configuration>
+  <!-- server settings -->
+  <server>
+    <identity value="msword/2.0 (Linux)"/>
+  </server>
+  <!-- http server -->
+  <open>
+    <bind value="0.0.0.0"/>
+    <port value="20008"/>
+    <queue_size value="20"/>
+    <disable value="no"/>
+  </open>
+  <!-- https server -->
+  <secure>
+    <bind value="0.0.0.0"/>
+    <port value="20009"/>
+    <queue_size value="20"/>
+    <disable value="false"/>
+    <cert_file value="comb.pem"/>
+  </secure>
+  <!-- mysql connection settings -->
+  <database>
+    <host value="localhost"/>
+    <user value="web"/>
+    <password value=""/>
+    <database value="httpd"/>
+  </database>
+  <!-- valid domains -->
+  <host value="www.alhem.net"/>
+  <host value="bhost.alhem.net"/>
+  <!-- mime -->
+  <mime>
+    <filename value="mime.types"/>
+  </mime>
+</configuration>

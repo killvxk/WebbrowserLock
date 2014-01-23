@@ -1,0 +1,36 @@
+// SystemPluginIELock.idl : System.Plugin.IELock 的 IDL 源
+//
+
+// 此文件将由 MIDL 工具处理以
+// 产生类型库(SystemPluginIELock.tlb)和封送处理代码。
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(B0C6A5D4-9F62-40FC-9D84-16D43DA19377),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IWebbrowserEx : IDispatch{
+};
+[
+	uuid(452E73DF-F526-4A7B-BFE8-1661DAEB73F1),
+	version(1.0),
+	helpstring("WebbrowserEx 1.0 Type Library")
+]
+library SystemPluginIELockLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(FD650D41-6D0B-48DE-A91D-6687A8F82381),
+		helpstring("System Plugin IELock")	
+	]
+	coclass WebbrowserEx
+	{
+		[default] interface IWebbrowserEx;
+	};
+};
+

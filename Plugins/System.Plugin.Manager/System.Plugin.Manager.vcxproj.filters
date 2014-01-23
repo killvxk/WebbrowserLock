@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Interface Files">
+      <UniqueIdentifier>{517625E8-3653-47B2-8F30-C4B355E1120B}</UniqueIdentifier>
+      <Extensions>i</Extensions>
+    </Filter>
+    <Filter Include="Interface Files\UtilFunc">
+      <UniqueIdentifier>{4aede597-edfe-4343-89fe-7117d3ded6f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interface Files\Portability">
+      <UniqueIdentifier>{48967473-8794-48ed-a899-da6a62896d88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interface Files\Log">
+      <UniqueIdentifier>{b18334a8-73bb-43f8-8034-c5e3ba2cf707}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interface Files\Module">
+      <UniqueIdentifier>{8736a051-bae5-48a6-b9b5-26d080f17f66}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Interface\Plugin\PluginManager\XComCreator.h">
+      <Filter>Interface Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\Plugin\PluginManager\Ix_PluginDelayLoad.h">
+      <Filter>Interface Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\Plugin\PluginManager\Ix_PluginLoader.h">
+      <Filter>Interface Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\Plugin\PluginManager\Ix_PluginLoader2.h">
+      <Filter>Interface Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\Plugin\PluginManager\PluginManager.h">
+      <Filter>Interface Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\Plugin\PluginManager\Ix_AppWorkPath.h">
+      <Filter>Interface Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cx_ObjectFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cx_PluginLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\Plugin\UtilFunc\AutoNew.h">
+      <Filter>Interface Files\UtilFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\Plugin\UtilFunc\ConvStr.h">
+      <Filter>Interface Files\UtilFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\Plugin\UtilFunc\ctrim.h">
+      <Filter>Interface Files\UtilFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\Plugin\UtilFunc\func_s.h">
+      <Filter>Interface Files\UtilFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\Plugin\UtilFunc\LoadDllHelper.h">
+      <Filter>Interface Files\UtilFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\Plugin\UtilFunc\LockCount.h">
+      <Filter>Interface Files\UtilFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\Plugin\UtilFunc\LockSyn.h">
+      <Filter>Interface Files\UtilFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\Plugin\UtilFunc\PluginInc.h">
+      <Filter>Interface Files\UtilFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\Plugin\UtilFunc\ReadInts.h">
+      <Filter>Interface Files\UtilFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\Plugin\UtilFunc\RelToAbs.h">
+      <Filter>Interface Files\UtilFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\Plugin\UtilFunc\RoundStr.h">
+      <Filter>Interface Files\UtilFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\Plugin\UtilFunc\SafeCall.h">
+      <Filter>Interface Files\UtilFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\Plugin\UtilFunc\ScanFiles.h">
+      <Filter>Interface Files\UtilFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\Plugin\UtilFunc\SysErrStr.h">
+      <Filter>Interface Files\UtilFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\Plugin\UtilFunc\vecfunc.h">
+      <Filter>Interface Files\UtilFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\Plugin\UtilFunc\vecptr.h">
+      <Filter>Interface Files\UtilFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\Plugin\UtilFunc\X3Portability.h">
+      <Filter>Interface Files\UtilFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\Plugin\Portability\linuximpl.h">
+      <Filter>Interface Files\Portability</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\Plugin\Portability\macimpl.h">
+      <Filter>Interface Files\Portability</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\Plugin\Portability\obsolete.h">
+      <Filter>Interface Files\Portability</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\Plugin\Portability\pathstr.h">
+      <Filter>Interface Files\Portability</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\Plugin\Portability\portimpl.h">
+      <Filter>Interface Files\Portability</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\Plugin\Portability\win32impl.h">
+      <Filter>Interface Files\Portability</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\Plugin\Portability\x3unix.h">
+      <Filter>Interface Files\Portability</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\Plugin\Portability\x3win.h">
+      <Filter>Interface Files\Portability</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\Plugin\Log\DebugR.h">
+      <Filter>Interface Files\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\Plugin\Log\Ix_LogManager.h">
+      <Filter>Interface Files\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\Plugin\Log\Ix_LogObserver.h">
+      <Filter>Interface Files\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\Plugin\Log\LogHelper2.h">
+      <Filter>Interface Files\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\Plugin\Log\LogHelper.h">
+      <Filter>Interface Files\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\Plugin\Ix_Object.h">
+      <Filter>Interface Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\Plugin\Ix_ObjectFactory.h">
+      <Filter>Interface Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\Plugin\XComPtr.h">
+      <Filter>Interface Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\Plugin\Module\Cx_Module.h">
+      <Filter>Interface Files\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\Plugin\Module\Cx_Object.h">
+      <Filter>Interface Files\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\Plugin\Module\Cx_SingletonObject.h">
+      <Filter>Interface Files\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\Plugin\Module\Ix_Module.h">
+      <Filter>Interface Files\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\Plugin\Module\XClassItem.h">
+      <Filter>Interface Files\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\Plugin\Module\XClassMacro.h">
+      <Filter>Interface Files\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\Plugin\Module\XModuleImpl.h">
+      <Filter>Interface Files\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\Plugin\Module\XModuleItem.h">
+      <Filter>Interface Files\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Interface\Plugin\Module\XModuleMacro.h">
+      <Filter>Interface Files\Module</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Cx_ObjectFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Cx_PluginLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DelayLoad.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Module.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource.Information.rc" />
+  </ItemGroup>
+</Project>

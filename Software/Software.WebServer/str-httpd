@@ -1,0 +1,195 @@
+-- MySQL dump 8.23
+--
+-- Host: localhost    Database: httpd
+---------------------------------------------------------
+-- Server version	3.23.58
+
+--
+-- Table structure for table `regel`
+--
+
+CREATE TABLE regel (
+  num int(11) NOT NULL auto_increment,
+  name varchar(255) NOT NULL default '',
+  typ tinyint(1) NOT NULL default '0',
+  path varchar(255) NOT NULL default '',
+  PRIMARY KEY  (num)
+) TYPE=MyISAM;
+
+--
+-- Dumping data for table `regel`
+--
+
+
+INSERT INTO regel VALUES (1,'File',1,'/usr/local/apache/www.alhem.net/htdocs');
+INSERT INTO regel VALUES (2,'Execute',2,'/usr/local/apache/www.alhem.net');
+
+--
+-- Table structure for table `url`
+--
+
+CREATE TABLE url (
+  num int(11) NOT NULL auto_increment,
+  host varchar(255) NOT NULL default '',
+  protocol varchar(255) NOT NULL default '',
+  method varchar(255) NOT NULL default '',
+  url varchar(255) NOT NULL default '',
+  grupp int(11) NOT NULL default '0',
+  regel int(11) NOT NULL default '0',
+  mime_type varchar(255) NOT NULL default '',
+  access_count int(11) NOT NULL default '0',
+  PRIMARY KEY  (num),
+  KEY host (host)
+) TYPE=MyISAM;
+
+--
+-- Dumping data for table `url`
+--
+
+
+INSERT INTO url VALUES (1,'www.alhem.net','https','GET','/index.html',0,1,'text/html',3);
+INSERT INTO url VALUES (2,'www.alhem.net','https','GET','/style/index.css',0,1,'text/css',2);
+INSERT INTO url VALUES (3,'www.alhem.net','https','GET','/js/overlib.js',0,1,'application/x-javascript',2);
+INSERT INTO url VALUES (4,'www.alhem.net','https','GET','/if5.html',0,1,'text/html',0);
+INSERT INTO url VALUES (5,'www.alhem.net','https','GET','/im5.html',0,1,'text/html',0);
+INSERT INTO url VALUES (6,'www.alhem.net','https','GET','/mimi.html',0,1,'text/html',0);
+INSERT INTO url VALUES (7,'www.alhem.net','https','GET','/dot/sock.png',0,1,'image/png',0);
+INSERT INTO url VALUES (8,'www.alhem.net','https','GET','/ifd.html',0,1,'text/html',1);
+INSERT INTO url VALUES (9,'www.alhem.net','https','GET','/imd.html',0,1,'text/html',1);
+INSERT INTO url VALUES (12,'www.alhem.net','http','GET','/js/overlib.js',0,1,'application/x-javascript',17);
+INSERT INTO url VALUES (11,'www.alhem.net','http','GET','/style/index.css',0,1,'text/css',31);
+INSERT INTO url VALUES (10,'www.alhem.net','http','GET','/index.html',0,1,'text/html',31);
+INSERT INTO url VALUES (13,'www.alhem.net','http','GET','/if3.html',0,1,'text/html',20);
+INSERT INTO url VALUES (14,'www.alhem.net','http','GET','/if7.html',0,1,'text/html',8);
+INSERT INTO url VALUES (15,'www.alhem.net','http','GET','/if1.html',0,1,'text/html',9);
+INSERT INTO url VALUES (16,'www.alhem.net','http','GET','/if2.html',0,1,'text/html',11);
+INSERT INTO url VALUES (17,'www.alhem.net','http','GET','/if4.html',0,1,'text/html',9);
+INSERT INTO url VALUES (18,'www.alhem.net','http','GET','/if8.html',0,1,'text/html',8);
+INSERT INTO url VALUES (19,'www.alhem.net','http','GET','/if5.html',0,1,'text/html',4);
+INSERT INTO url VALUES (20,'www.alhem.net','http','GET','/im3.html',0,1,'text/html',18);
+INSERT INTO url VALUES (21,'www.alhem.net','http','GET','/Sockets/index.html',0,1,'text/html',35);
+INSERT INTO url VALUES (22,'www.alhem.net','http','GET','/im7.html',0,1,'text/html',7);
+INSERT INTO url VALUES (23,'www.alhem.net','http','GET','/wolfshade/index.html',0,1,'text/html',7);
+INSERT INTO url VALUES (24,'www.alhem.net','http','GET','/cgi1.html',0,1,'text/html',8);
+INSERT INTO url VALUES (25,'www.alhem.net','http','GET','/im1.html',0,1,'text/html',8);
+INSERT INTO url VALUES (26,'www.alhem.net','http','GET','/im2.html',0,1,'text/html',10);
+INSERT INTO url VALUES (27,'www.alhem.net','http','GET','/mysql.html',0,1,'text/html',15);
+INSERT INTO url VALUES (28,'www.alhem.net','http','GET','/im4.html',0,1,'text/html',8);
+INSERT INTO url VALUES (29,'www.alhem.net','http','GET','/applesoft.html',0,1,'text/html',8);
+INSERT INTO url VALUES (30,'www.alhem.net','http','GET','/im8.html',0,1,'text/html',7);
+INSERT INTO url VALUES (31,'www.alhem.net','http','GET','/ifd.html',0,1,'text/html',6);
+INSERT INTO url VALUES (32,'www.alhem.net','http','GET','/wolfshade/index.css',0,1,'text/css',12);
+INSERT INTO url VALUES (33,'www.alhem.net','http','GET','/ifc.html',0,1,'text/html',7);
+INSERT INTO url VALUES (34,'www.alhem.net','http','GET','/ifb.html',0,1,'text/html',6);
+INSERT INTO url VALUES (35,'www.alhem.net','http','GET','/im5.html',0,1,'text/html',3);
+INSERT INTO url VALUES (36,'www.alhem.net','http','GET','/mimi.html',0,1,'text/html',3);
+INSERT INTO url VALUES (37,'www.alhem.net','http','GET','/if6.html',0,1,'text/html',3);
+INSERT INTO url VALUES (38,'www.alhem.net','http','GET','/if9.html',0,1,'text/html',3);
+INSERT INTO url VALUES (39,'www.alhem.net','http','GET','/ifa.html',0,1,'text/html',4);
+INSERT INTO url VALUES (40,'www.alhem.net','http','GET','/imd.html',0,1,'text/html',5);
+INSERT INTO url VALUES (41,'www.alhem.net','http','GET','/imc.html',0,1,'text/html',6);
+INSERT INTO url VALUES (42,'www.alhem.net','http','GET','/small/index.html',0,1,'text/html',9);
+INSERT INTO url VALUES (43,'www.alhem.net','http','GET','/imb.html',0,1,'text/html',5);
+INSERT INTO url VALUES (44,'www.alhem.net','http','GET','/legend/index.html',0,1,'text/html',5);
+INSERT INTO url VALUES (45,'www.alhem.net','http','GET','/dot/sock.png',0,1,'image/png',5);
+INSERT INTO url VALUES (46,'www.alhem.net','http','GET','/im6.html',0,1,'text/html',2);
+INSERT INTO url VALUES (47,'www.alhem.net','http','GET','/viawww.html',0,1,'text/html',2);
+INSERT INTO url VALUES (48,'www.alhem.net','http','GET','/im9.html',0,1,'text/html',2);
+INSERT INTO url VALUES (49,'www.alhem.net','http','GET','/ima.html',0,1,'text/html',2);
+INSERT INTO url VALUES (50,'www.alhem.net','http','GET','/dot/small.png',0,1,'image/png',7);
+INSERT INTO url VALUES (51,'www.alhem.net','http','GET','/robots.txt',0,1,'text/plain',4);
+INSERT INTO url VALUES (52,'www.alhem.net','https','GET','/if3.html',0,1,'text/html',6);
+INSERT INTO url VALUES (53,'www.alhem.net','https','GET','/if7.html',0,1,'text/html',2);
+INSERT INTO url VALUES (54,'www.alhem.net','https','GET','/if1.html',0,1,'text/html',2);
+INSERT INTO url VALUES (55,'www.alhem.net','https','GET','/if2.html',0,1,'text/html',4);
+INSERT INTO url VALUES (56,'www.alhem.net','https','GET','/if4.html',0,1,'text/html',2);
+INSERT INTO url VALUES (57,'www.alhem.net','http','GET','/favicon.ico',0,1,'',10);
+INSERT INTO url VALUES (58,'www.alhem.net','http','GET','/icon/flags/se.png',0,1,'image/png',11);
+INSERT INTO url VALUES (59,'www.alhem.net','https','GET','/favicon.ico',0,1,'',2);
+INSERT INTO url VALUES (60,'www.alhem.net','https','GET','/im3.html',0,1,'text/html',5);
+INSERT INTO url VALUES (61,'www.alhem.net','https','GET','/Sockets/index.html',0,1,'text/html',6);
+INSERT INTO url VALUES (62,'www.alhem.net','http','GET','/ifh.html',0,1,'text/html',4);
+INSERT INTO url VALUES (63,'www.alhem.net','http','GET','/iff.html',0,1,'text/html',6);
+INSERT INTO url VALUES (64,'www.alhem.net','https','GET','/icon/flags/se.png',0,1,'image/png',2);
+INSERT INTO url VALUES (65,'www.alhem.net','https','GET','/robots.txt',0,1,'text/plain',1);
+INSERT INTO url VALUES (66,'www.alhem.net','https','GET','/im2.html',0,1,'text/html',3);
+INSERT INTO url VALUES (67,'www.alhem.net','https','GET','/mysql.html',0,1,'text/html',4);
+INSERT INTO url VALUES (68,'www.alhem.net','https','GET','/ifh.html',0,1,'text/html',3);
+INSERT INTO url VALUES (69,'www.alhem.net','https','GET','/iff.html',0,1,'text/html',2);
+INSERT INTO url VALUES (70,'www.alhem.net','https','GET','/ifg.html',0,1,'text/html',2);
+INSERT INTO url VALUES (71,'www.alhem.net','https','GET','/imh.html',0,1,'text/html',2);
+INSERT INTO url VALUES (72,'www.alhem.net','https','GET','/project/trackerbt/index.html',0,1,'text/html',3);
+INSERT INTO url VALUES (73,'www.alhem.net','https','GET','/project/trackerbt/tr.png',0,1,'image/png',4);
+INSERT INTO url VALUES (74,'www.alhem.net','https','GET','/project/trackerbt/trackerbt.png',0,1,'image/png',4);
+INSERT INTO url VALUES (75,'www.alhem.net','https','GET','/imf.html',0,1,'text/html',1);
+INSERT INTO url VALUES (76,'www.alhem.net','https','GET','/img.html',0,1,'text/html',1);
+INSERT INTO url VALUES (77,'www.alhem.net','https','GET','/project/example7/index.html',0,1,'text/html',1);
+INSERT INTO url VALUES (78,'www.alhem.net','https','GET','/im1.html',0,1,'text/html',1);
+INSERT INTO url VALUES (79,'www.alhem.net','https','GET','/cgi1.html',0,1,'text/html',1);
+INSERT INTO url VALUES (80,'www.alhem.net','https','GET','/ife.html',0,1,'text/html',1);
+INSERT INTO url VALUES (81,'www.alhem.net','https','GET','/im4.html',0,1,'text/html',1);
+INSERT INTO url VALUES (82,'www.alhem.net','https','GET','/applesoft.html',0,1,'text/html',1);
+INSERT INTO url VALUES (83,'www.alhem.net','https','GET','/ifc.html',0,1,'text/html',1);
+INSERT INTO url VALUES (84,'www.alhem.net','https','GET','/im7.html',0,1,'text/html',1);
+INSERT INTO url VALUES (85,'www.alhem.net','https','GET','/wolfshade/index.html',0,1,'text/html',1);
+INSERT INTO url VALUES (86,'www.alhem.net','https','GET','/ifb.html',0,1,'text/html',1);
+INSERT INTO url VALUES (87,'www.alhem.net','https','GET','/if8.html',0,1,'text/html',1);
+INSERT INTO url VALUES (88,'www.alhem.net','http','GET','/imh.html',0,1,'text/html',3);
+INSERT INTO url VALUES (89,'www.alhem.net','http','GET','/project/trackerbt/index.html',0,1,'text/html',4);
+INSERT INTO url VALUES (90,'www.alhem.net','http','GET','/imf.html',0,1,'text/html',4);
+INSERT INTO url VALUES (91,'www.alhem.net','http','GET','/ifg.html',0,1,'text/html',5);
+INSERT INTO url VALUES (92,'www.alhem.net','http','GET','/ife.html',0,1,'text/html',5);
+INSERT INTO url VALUES (93,'www.alhem.net','http','GET','/project/trackerbt/tr.png',0,1,'image/png',3);
+INSERT INTO url VALUES (94,'www.alhem.net','http','GET','/project/trackerbt/trackerbt.png',0,1,'image/png',3);
+INSERT INTO url VALUES (95,'www.alhem.net','http','GET','/dot/testa.png',0,1,'image/png',3);
+INSERT INTO url VALUES (96,'www.alhem.net','http','GET','/img.html',0,1,'text/html',4);
+INSERT INTO url VALUES (97,'www.alhem.net','http','GET','/project/example7/index.html',0,1,'text/html',10);
+INSERT INTO url VALUES (98,'www.alhem.net','http','GET','/project/example7/example7.png',0,1,'image/png',7);
+INSERT INTO url VALUES (99,'www.alhem.net','http','GET','/ime.html',0,1,'text/html',4);
+INSERT INTO url VALUES (100,'www.alhem.net','http','GET','/style/menu.css',0,1,'text/css',23);
+INSERT INTO url VALUES (101,'www.alhem.net','http','GET','/donnie.html',0,1,'text/html',22);
+INSERT INTO url VALUES (102,'www.alhem.net','http','GET','/image/new.gif',0,1,'image/gif',13);
+INSERT INTO url VALUES (103,'www.alhem.net','http','GET','/Sockets/sockets.png',0,1,'image/png',21);
+INSERT INTO url VALUES (104,'www.alhem.net','http','GET','/Sockets/tutorial/index.html',0,1,'text/html',10);
+INSERT INTO url VALUES (105,'www.alhem.net','http','GET','/Sockets/example1.html',0,1,'text/html',7);
+INSERT INTO url VALUES (106,'www.alhem.net','http','GET','/Sockets/example2.html',0,1,'text/html',8);
+INSERT INTO url VALUES (107,'www.alhem.net','http','GET','/Sockets/example3.html',0,1,'text/html',4);
+INSERT INTO url VALUES (108,'www.alhem.net','http','GET','/small',0,1,'',2);
+INSERT INTO url VALUES (109,'www.alhem.net','http','GET','/Sockets/example5.html',0,1,'text/html',4);
+INSERT INTO url VALUES (110,'www.alhem.net','http','GET','/Sockets/example6.html',0,1,'text/html',4);
+INSERT INTO url VALUES (111,'www.alhem.net','http','GET','/Sockets/tutorial/tut.css',0,1,'text/css',19);
+INSERT INTO url VALUES (112,'www.alhem.net','http','GET','/Sockets/tutorial/valid-html401.png',0,1,'image/png',13);
+INSERT INTO url VALUES (113,'www.alhem.net','http','GET','/Sockets/tutorial/using.html',0,1,'text/html',6);
+INSERT INTO url VALUES (114,'www.alhem.net','http','GET','/dot/stprog.png',0,1,'image/png',5);
+INSERT INTO url VALUES (115,'www.alhem.net','http','GET','/dot/smtpnuke.png',0,1,'image/png',2);
+INSERT INTO url VALUES (116,'www.alhem.net','http','GET','/dot/chat.png',0,1,'image/png',3);
+INSERT INTO url VALUES (117,'www.alhem.net','http','GET','/dot/clientserver.png',0,1,'image/png',2);
+INSERT INTO url VALUES (118,'www.alhem.net','http','GET','/Sockets/httpget.cpp',0,1,'',1);
+INSERT INTO url VALUES (119,'www.alhem.net','http','GET','/Sockets/httpget2.cpp',0,1,'',1);
+INSERT INTO url VALUES (120,'www.alhem.net','http','GET','/Sockets/tutorial/using1a.html',0,1,'text/html',3);
+INSERT INTO url VALUES (121,'www.alhem.net','http','GET','/Sockets/tutorial/using1b.html',0,1,'text/html',3);
+INSERT INTO url VALUES (122,'www.alhem.net','http','GET','/Sockets/tutorial/using1c.html',0,1,'text/html',3);
+INSERT INTO url VALUES (123,'www.alhem.net','http','GET','/Sockets/tutorial/using1d.html',0,1,'text/html',3);
+INSERT INTO url VALUES (124,'www.alhem.net','http','GET','/Sockets/tutorial/using2a.html',0,1,'text/html',2);
+INSERT INTO url VALUES (125,'www.alhem.net','http','GET','/Sockets/tutorial/using2b.html',0,1,'text/html',3);
+INSERT INTO url VALUES (126,'www.alhem.net','http','GET','/Sockets/tutorial/using3a.html',0,1,'text/html',3);
+INSERT INTO url VALUES (127,'www.alhem.net','http','GET','/Sockets/tutorial/using3b.html',0,1,'text/html',2);
+INSERT INTO url VALUES (128,'www.alhem.net','http','GET','/Sockets/tutorial/last.html',0,1,'text/html',2);
+
+--
+-- Table structure for table `useragent`
+--
+
+CREATE TABLE useragent (
+  num int(11) NOT NULL auto_increment,
+  name varchar(255) NOT NULL default '',
+  PRIMARY KEY  (num),
+  KEY name (name)
+) TYPE=MyISAM;
+
+--
+-- Dumping data for table `useragent`
+--
+
+
+

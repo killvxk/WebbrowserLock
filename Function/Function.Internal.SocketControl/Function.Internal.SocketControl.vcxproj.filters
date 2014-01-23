@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\Mdk">
+      <UniqueIdentifier>{4f4a586d-8d62-4765-9231-1e2f6df516a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Frame">
+      <UniqueIdentifier>{81384bb2-49c5-40a4-a43b-8fc56ea9cb94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Frame">
+      <UniqueIdentifier>{547de7dd-9a61-4989-8ed5-710efbc62a8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Mdk">
+      <UniqueIdentifier>{fe03c4ee-784e-4e9c-9d89-27404665f035}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\Mdk\atom.h">
+      <Filter>头文件\Mdk</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Mdk\ThreadPool.h">
+      <Filter>头文件\Mdk</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Mdk\ConfigFile.h">
+      <Filter>头文件\Mdk</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Mdk\Executor.h">
+      <Filter>头文件\Mdk</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Mdk\FixLengthInt.h">
+      <Filter>头文件\Mdk</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Mdk\IOBuffer.h">
+      <Filter>头文件\Mdk</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Mdk\IOBufferBlock.h">
+      <Filter>头文件\Mdk</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Mdk\Lock.h">
+      <Filter>头文件\Mdk</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Mdk\Logger.h">
+      <Filter>头文件\Mdk</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Mdk\mapi.h">
+      <Filter>头文件\Mdk</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Mdk\MemoryPool.h">
+      <Filter>头文件\Mdk</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Mdk\Queue.h">
+      <Filter>头文件\Mdk</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Mdk\SharedPtr.h">
+      <Filter>头文件\Mdk</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Mdk\ShareMemory.h">
+      <Filter>头文件\Mdk</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Mdk\Signal.h">
+      <Filter>头文件\Mdk</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Mdk\Socket.h">
+      <Filter>头文件\Mdk</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Mdk\Task.h">
+      <Filter>头文件\Mdk</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Mdk\Thread.h">
+      <Filter>头文件\Mdk</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Frame\netserver\EpollFrame.h">
+      <Filter>头文件\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Frame\netserver\EpollMonitor.h">
+      <Filter>头文件\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Frame\netserver\IOCPFrame.h">
+      <Filter>头文件\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Frame\netserver\IOCPMonitor.h">
+      <Filter>头文件\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Frame\netserver\NetConnect.h">
+      <Filter>头文件\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Frame\netserver\NetEngine.h">
+      <Filter>头文件\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Frame\netserver\NetEventMonitor.h">
+      <Filter>头文件\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Frame\netserver\NetHost.h">
+      <Filter>头文件\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Frame\netserver\NetServer.h">
+      <Filter>头文件\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Frame\netserver\STEpoll.h">
+      <Filter>头文件\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Frame\netserver\STIocp.h">
+      <Filter>头文件\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Frame\netserver\STNetConnect.h">
+      <Filter>头文件\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Frame\netserver\STNetEngine.h">
+      <Filter>头文件\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Frame\netserver\STNetHost.h">
+      <Filter>头文件\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Frame\netserver\STNetServer.h">
+      <Filter>头文件\Frame</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Frame\netserver\EpollFrame.cpp">
+      <Filter>源文件\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Frame\netserver\EpollMonitor.cpp">
+      <Filter>源文件\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Frame\netserver\IOCPFrame.cpp">
+      <Filter>源文件\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Frame\netserver\IOCPMonitor.cpp">
+      <Filter>源文件\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Frame\netserver\NetConnect.cpp">
+      <Filter>源文件\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Frame\netserver\NetEngine.cpp">
+      <Filter>源文件\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Frame\netserver\NetEventMonitor.cpp">
+      <Filter>源文件\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Frame\netserver\NetHost.cpp">
+      <Filter>源文件\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Frame\netserver\NetServer.cpp">
+      <Filter>源文件\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Frame\netserver\STEpoll.cpp">
+      <Filter>源文件\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Frame\netserver\STIocp.cpp">
+      <Filter>源文件\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Frame\netserver\STNetConnect.cpp">
+      <Filter>源文件\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Frame\netserver\STNetEngine.cpp">
+      <Filter>源文件\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Frame\netserver\STNetHost.cpp">
+      <Filter>源文件\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Frame\netserver\STNetServer.cpp">
+      <Filter>源文件\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Mdk\ConfigFile.cpp">
+      <Filter>源文件\Mdk</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Mdk\Executor.cpp">
+      <Filter>源文件\Mdk</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Mdk\IOBuffer.cpp">
+      <Filter>源文件\Mdk</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Mdk\IOBufferBlock.cpp">
+      <Filter>源文件\Mdk</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Mdk\Lock.cpp">
+      <Filter>源文件\Mdk</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Mdk\Logger.cpp">
+      <Filter>源文件\Mdk</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Mdk\mapi.cpp">
+      <Filter>源文件\Mdk</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Mdk\MemoryPool.cpp">
+      <Filter>源文件\Mdk</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Mdk\Queue.cpp">
+      <Filter>源文件\Mdk</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Mdk\ShareMemory.cpp">
+      <Filter>源文件\Mdk</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Mdk\Signal.cpp">
+      <Filter>源文件\Mdk</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Mdk\Socket.cpp">
+      <Filter>源文件\Mdk</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Mdk\Task.cpp">
+      <Filter>源文件\Mdk</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Mdk\Thread.cpp">
+      <Filter>源文件\Mdk</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Mdk\ThreadPool.cpp">
+      <Filter>源文件\Mdk</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
