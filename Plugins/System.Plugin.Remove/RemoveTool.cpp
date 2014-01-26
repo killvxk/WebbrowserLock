@@ -4,6 +4,11 @@
 // 引用外部头文件
 
 #include "RemoveTool.h"
+#include <Function.Internal.LuaPlus\LuaPlus.h>
+
+#pragma comment(lib,DIRECTORY_LIB "Function\\Function.Internal.LuaPlus.Lib")
+
+using namespace LuaPlus;
 
 
 //////////////////////////////////////////////////////////////////////////
@@ -51,9 +56,34 @@ bool TestExecuteFolder(LPCTSTR lpFilePath,LPCTSTR lpFileName,PVOID pVoid)
 	return FALSE;
 } 
 
+int add(int a, int b) { return a+b;}
 bool CRemove::Initialization(PVOID pData)
 {
 	//cFileControlTool.RemoveFile(_T("C:\\WINDOWS\\system32\\ntdll.dll"),true);
+	// 创建Lua解释器：
+	LuaStateOwner state(true); 
+
+	// 执行Lua脚本：
+	state->DoString("print('Hello World\\n')");
+	// 载入Lua脚本文件并执行：
+	state->DoString("local file,msg =io.open(\"E:/Temp/Lua/a.txt\",\"w+\") \r\n print(msg) \r\n print(io.type(file)) \r\n file:write(\"121234564654653\") \r\n file:flush() \r\n file:close()");
+
+	// 载入编译后的Lua脚本文件并执行：
+	state->DoFile("C:\\test.luac");
+	// 为Lua脚本设置变量
+	state->GetGlobals().SetNumber("myvalue", 123456);
+	// 获得Lua变量的值
+	int myvalue = state->GetGlobal("myvalue").GetInteger();
+
+	// 调用Lua函数
+	LuaFunction<int> luaPrint = state->GetGlobal("print");
+	luaPrint("Hello World\n");
+
+	// 让Lua调用C语言函数
+	state->GetGlobals().RegisterDirect("add", add);
+	state->DoString("print(add(3,4))");
+
+	return true;
 
 	//cFileControlTool.FindFiles(_T("C:\\*\\system32"),_T("*"),CallbackFindFile,TestExecuteFolder,FALSE,TRUE,&cFileControlTool,&cFileControlTool);
 	//////////////////////////////////////////////////////////////////////////
